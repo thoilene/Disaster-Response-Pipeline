@@ -25,9 +25,8 @@ Disaster management is a challenging task as it could be difficult to identify t
 - Write A Data Science Blog Post.ipynb: Jupyter notebook containing the step of analysis and the code of the project
   
 - app
-  - templates
-   - master.html  # main page of web app
-   - go.html  # classification result page of web app
+  - templates/master.html  # main page of web app
+  - templates/go.html  # classification result page of web app
   - run.py  # Flask file that runs app
 
 - data
