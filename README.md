@@ -42,6 +42,30 @@ Disaster management is a challenging task as it could be difficult to identify t
 
 - README.md
 
-## how to run the Python scripts and web app
+## How to run the Python scripts and web app
+
+The project is structured in 3 modules.
+
+### Data module
+
+This module prepares the data using an ETL pipeline. The following command runs an ETL pipeline in order to clean data and store in database (from the project folder):
+
+#### python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv
+
+
+### Model module
+
+The model module creates, trains a model using an ML pipeline with a multi-output classifier and save it. The following command runs an ML pipeline in order to create, train a classifier and save it in a file (from the project folder):
+
+#### python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl 
+
+### Web app module
+
+The web app module offer a front end solution for the use of the classifier. The following command starts the web app from the app's directory:
+
+#### python run.py
+
+After starting the web app - the app is accessible via a browser. Go to http://127.0.0.1:3001/ to this end.
+
 
 
