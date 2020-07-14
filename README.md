@@ -26,8 +26,8 @@ Disaster management is a challenging task as it could be difficult to identify t
   
 - app
   - templates
-  - master.html  # main page of web app
-  - go.html  # classification result page of web app
+   - master.html  # main page of web app
+   - go.html  # classification result page of web app
   - run.py  # Flask file that runs app
 
 - data
