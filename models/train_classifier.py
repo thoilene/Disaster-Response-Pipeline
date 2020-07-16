@@ -78,7 +78,11 @@ def build_model():
         ('clf', MultiOutputClassifier(RandomForestClassifier(n_estimators= 50, random_state=42)))
     ])
     
-    return pipeline
+    parameters =  {'clf__estimator__n_estimators': [50,100], 'clf__estimator__max_features': ['auto','sqrt']} 
+
+    cv = GridSearchCV(pipeline, param_grid=parameters, cv=3, n_jobs=1)
+    
+    return cv
 
 def evaluate_model(model, X_test, Y_test, category_names):
     """
@@ -122,7 +126,11 @@ def main():
         model = build_model()
         
         print('Training model...')
-        model.fit(X_train, Y_train)
+        model.fit(X_train, Y_train) # model is GridSearchCV on the ML pipeline
+        
+        print("Output the parameters of the underlying random forest classifier...")
+        print(model.best_params_) # output the parameters of the underlying random forest classifier
+        model = model.best_estimator_ # After training the model is set to the "best_estimator_" of the GridSearchCV
         
         print('Evaluating model...')
         evaluate_model(model, X_test, Y_test, category_names)
