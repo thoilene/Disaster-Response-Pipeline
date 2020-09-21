@@ -18,6 +18,8 @@ The multi-classes ML pipeline will read the disaster messages and thier categori
 
 The Flask web-app will load the ML model from the filesystem and the disaster messages from the database created with the ETL pipeline. It will offer a functionality to select a message and visualize the classes of the message instantly. This information could then be used by disaster management office. 
 
+![Disaster Home](data/pic1.jpg "Disaster Home")
+
 
 The [disaster messages](https://www.kaggle.com/davidshahshankhar/disasterresponsepipeline) dataset supporting this work is freely available on kaggle.com. It consists of 2 csv-files:
 
