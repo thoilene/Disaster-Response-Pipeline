@@ -71,14 +71,14 @@ The project is structured in 3 modules.
 
 This module prepares the data using an ETL pipeline. The following command runs an ETL pipeline in order to clean data and store in database (from the project folder):
 
-#### #python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv
+###### python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv
 
 
 ### Model module
 
 The model module creates, trains a model using an ML pipeline with a multi-output classifier and save it. The following command runs an ML pipeline in order to create, train a classifier and save it in a file (from the project folder):
 
-#### #python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl 
+###### python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl 
 
 ### Web app module
 
