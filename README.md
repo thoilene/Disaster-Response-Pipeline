@@ -1,7 +1,29 @@
-# Project: Disaster Response Pipeline
+# Disaster Response App - Using ML Pipeline 
 
-* This is a project in the context of the Nanodegree program "Data Science" 
-* It intends to show the ability of the student to create and use ETL pipeline and Machine Learning (ML) pipeline in Data Engineering as well as to develop a web app with visualization (Software Engineering).
+For the purpose of disaster management, disaster messages are collected and categorized . An important aspect of disaster management is the choice of the disaster categories which allow to take appropriate measures to manage the situstion. In case of accident, fire or other immediate threats, a reaction is expected within a few minutes. 
+
+**How could AI and Machine Learning support disaster management in this context?**
+
+A disaster response App using Machine Learning to classify disaster messages could be the answer to the question above. In this solution, a multi-class Machine Learning classifier could classify the disaster messages using NLP techniques. The outcoume of the classification would be made available to the disaster management office, which will take the appropriate measures to manage the situation.The solution proposed in this work contains three parts.
+
+- **ETL Pipeline for data preparation (ETL-Pipeline-Preparation.ipynb)**
+
+The ETL pipeline will prepare the data to make it clean for machine learning. The data are read from csv-files, tranformed and stored in a database-file.
+
+- **Multi-Classes Machine Learning Pipeline (Disaster-Response-ML-Pipeline.ipynb)**
+
+The multi-classes ML pipeline will read the disaster messages and thier categories from database-file mentionned above. An ML model will be built, trainned and stored on the local filesystem.
+
+- **Flask web-App for the categorization of disaster messages (./app/run.py)**
+
+The Flask web-app will load the ML model from the filesystem and the disaster messages from the database created with the ETL pipeline. It will offer a functionality to select a message and visualize the classes of the message instantly. This information could then be used by disaster management office. 
+
+
+The [disaster messages](https://www.kaggle.com/davidshahshankhar/disasterresponsepipeline) dataset supporting this work is freely available on kaggle.com. It consists of 2 csv-files:
+
+- messages.csv: file containing disater messages
+- categories.csv: file containing different categories of disaster 
+
 
 ## Requirements
 
