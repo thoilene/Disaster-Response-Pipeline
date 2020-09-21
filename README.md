@@ -88,5 +88,49 @@ The web app module offer a front end solution for the use of the classifier. The
 
 After starting the web app - the app is accessible via a browser. Go to http://127.0.0.1:3001/ to this end.
 
+## Conclusion
 
+The Disaster Response web App in this work is based on a predictive multi-classes ML model with high performance. The test results show this high performance of accuracy and f1_score.
+
+
+|    | Category               | accuracy   | f1_score   |
+|:---|:-----------------------|:-----------|:-----------|
+|  1 | related                | 82.32%     | 80.97%     |
+|  2 | request                | 89.99%     | 88.85%     |
+|  3 | offer                  | 99.50%     | 99.26%     |
+|  4 | aid_related            | 77.96%     | 77.80%     |
+|  5 | medical_help           | 92.26%     | 89.08%     |
+|  6 | medical_products       | 95.10%     | 93.00%     |
+|  7 | search_and_rescue      | 97.62%     | 96.48%     |
+|  8 | security               | 98.32%     | 97.53%     |
+|  9 | military               | 96.97%     | 95.62%     |
+| 10 | water                  | 95.04%     | 93.84%     |
+| 11 | food                   | 93.00%     | 91.90%     |
+| 12 | shelter                | 92.43%     | 90.19%     |
+| 13 | clothing               | 98.67%     | 98.05%     |
+| 14 | money                  | 98.13%     | 97.34%     |
+| 15 | missing_people         | 98.87%     | 98.33%     |
+| 16 | refugees               | 96.74%     | 95.14%     |
+| 17 | death                  | 95.80%     | 94.15%     |
+| 18 | other_aid              | 87.03%     | 81.64%     |
+| 19 | infrastructure_related | 93.71%     | 90.70%     |
+| 20 | transport              | 95.52%     | 93.49%     |
+| 21 | buildings              | 95.08%     | 92.88%     |
+| 22 | electricity            | 97.67%     | 96.52%     |
+| 23 | tools                  | 99.39%     | 99.09%     |
+| 24 | hospitals              | 99.12%     | 98.69%     |
+| 25 | shops                  | 99.58%     | 99.37%     |
+| 26 | aid_centers            | 98.70%     | 98.08%     |
+| 27 | other_infrastructure   | 95.73%     | 93.66%     |
+| 28 | weather_related        | 87.66%     | 87.21%     |
+| 29 | floods                 | 94.30%     | 92.90%     |
+| 30 | storm                  | 92.81%     | 91.56%     |
+| 31 | fire                   | 98.97%     | 98.48%     |
+| 32 | earthquake             | 95.63%     | 95.25%     |
+| 33 | cold                   | 97.83%     | 96.87%     |
+| 34 | other_weather          | 94.74%     | 92.21%     |
+| 35 | direct_report          | 85.91%     | 83.87%     |
+
+This work demonstrates how to use AI and Machine Learning easily and efficiently to improve disaster response which could save lives.
+It is an end-to-end application of data-driven social management encompassing data engineering (with ETL), data analysis, data visualization, machine learning and software engineering. 
 
